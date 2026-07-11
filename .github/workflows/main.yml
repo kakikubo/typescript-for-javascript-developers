@@ -22,5 +22,7 @@ jobs:
           bun-version: latest
       - name: Install Dependencies
         run: bun install
+      - name: Type check
+        run: bun run typecheck
       - name: Run test
         run: bun run test

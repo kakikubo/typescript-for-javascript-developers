@@ -6,5 +6,5 @@ console.log(value);
 value = 'foo';
 
 console.log(value);
-value = null;
+// value = null; // Error: null は number | string に代入不可
 
