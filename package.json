@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
   "repository": {
