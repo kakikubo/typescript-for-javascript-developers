@@ -5,20 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn",
-    "test": "jest"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "transform": {
-      "^.+\\.ts$": ["ts-jest", { "tsconfig": "tsconfig.json" }]
-    },
-    "testMatch": [
-      "**/tests/*.test.(ts|tsx|js)"
-    ]
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -36,14 +23,12 @@
     "yarn": "2.4.3"
   },
   "devDependencies": {
-    "@types/jest": "30.0.0",
     "@types/node": "26.1.0",
-    "jest": "30.4.2",
     "prettier": "3.9.4",
-    "ts-jest": "29.4.9",
     "ts-node": "10.9.2",
     "ts-node-dev": "2.0.0",
     "tsd": "0.33.0",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
   }
 }
