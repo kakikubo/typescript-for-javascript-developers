@@ -1,11 +1,14 @@
+# GitHub Actions だけを Dependabot で更新する（npm / bun は Renovate が担当）
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: weekly
-    time: "06:00"
-  open-pull-requests-limit: 10
-  ignore:
-    - dependency-name: "*"
-      update-types: ["version-update:semver-patch"]
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      time: "06:00"
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
+    assignees:
+      - kakikubo
+    labels:
+      - "dependencies"
